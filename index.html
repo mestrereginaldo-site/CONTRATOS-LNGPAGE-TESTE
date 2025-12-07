@@ -1,54 +1,40 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-XXXXXX');</script>
-    <!-- End Google Tag Manager -->
+    <!-- Meta Tags de Conversão -->
+    <title>ContratoExpresso 2.0 | Contratos Ilimitados por R$97/mês via WhatsApp</title>
+    <meta name="description" content="Sistema automatizado de contratos jurídicos. Crie, revise e assine contratos em 2 minutos via WhatsApp. 7 dias grátis. Economize até R$5.000/mês em advogados.">
     
-    <!-- Meta Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', 'YOUR_PIXEL_ID');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
+    <!-- Open Graph -->
+    <meta property="og:title" content="ContratoExpresso 2.0 - Contratos Ilimitados por R$97/mês">
+    <meta property="og:description" content="Sistema completo de contratos automatizados via WhatsApp">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:url" content="https://contratoexpresso.com.br">
+    <meta property="og:type" content="website">
     
-    <title>Contrato Expresso 2.0 • Contratos Ilimitados por R$97/mês</title>
-    <meta name="description" content="Sistema completo de contratos automatizados. Crie, revise e assine contratos em minutos. Planos a partir de R$97/mês. Experimente 7 dias grátis.">
-    <meta name="keywords" content="contrato online, contrato automático, sistema de contratos, contrato mensal, jurídico online">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ContratoExpresso 2.0 - Contratos Ilimitados R$97/mês">
+    <meta name="twitter:description" content="Sistema automatizado de contratos via WhatsApp">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/96/000000/contract.png">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚖️</text></svg>">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
-        /* RESET & VARIABLES */
+        /* RESET & VARIÁVEIS */
         :root {
             --primary: #2563EB;
             --primary-dark: #1E40AF;
-            --primary-light: #3B82F6;
+            --primary-light: #60A5FA;
             --secondary: #10B981;
             --accent: #F59E0B;
             --danger: #EF4444;
@@ -58,10 +44,17 @@
             --gray: #6B7280;
             --gray-light: #E5E7EB;
             --white: #FFFFFF;
-            --shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-            --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.15);
+            --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+            --shadow: 0 10px 25px rgba(0,0,0,0.1);
+            --shadow-lg: 0 20px 40px rgba(0,0,0,0.15);
+            --shadow-xl: 0 25px 50px rgba(0,0,0,0.2);
             --radius: 12px;
-            --transition: all 0.3s ease;
+            --radius-lg: 20px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --gradient-primary: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            --gradient-success: linear-gradient(135deg, var(--secondary), #059669);
+            --gradient-accent: linear-gradient(135deg, var(--accent), #D97706);
+            --gradient-dark: linear-gradient(135deg, var(--darker), #000);
         }
         
         * {
@@ -72,14 +65,17 @@
         
         html {
             scroll-behavior: smooth;
+            scroll-padding-top: 80px;
         }
         
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             line-height: 1.6;
             color: var(--dark);
-            background-color: var(--light);
+            background: linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 100%);
             overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
         
         /* TYPOGRAPHY */
@@ -87,120 +83,40 @@
             font-family: 'Poppins', sans-serif;
             font-weight: 800;
             line-height: 1.2;
-            margin-bottom: 1rem;
         }
         
         h1 {
             font-size: 3.5rem;
-            margin-bottom: 1.5rem;
+            letter-spacing: -0.5px;
         }
         
         h2 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
         }
         
         h3 {
-            font-size: 1.75rem;
-        }
-        
-        p {
-            margin-bottom: 1.5rem;
-            color: var(--gray);
+            font-size: 2rem;
         }
         
         .lead {
             font-size: 1.25rem;
             font-weight: 500;
+            color: var(--gray);
+        }
+        
+        .text-gradient {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
         
         /* CONTAINER */
         .container {
             width: 100%;
-            max-width: 1200px;
+            max-width: 1280px;
             margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        /* BUTTONS */
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            padding: 18px 36px;
-            border-radius: var(--radius);
-            font-family: 'Inter', sans-serif;
-            font-weight: 700;
-            font-size: 18px;
-            text-decoration: none;
-            border: none;
-            cursor: pointer;
-            transition: var(--transition);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .btn-primary {
-            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-            color: var(--white);
-            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
-        }
-        
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 35px rgba(37, 99, 235, 0.4);
-        }
-        
-        .btn-secondary {
-            background: var(--white);
-            color: var(--primary);
-            border: 2px solid var(--gray-light);
-        }
-        
-        .btn-secondary:hover {
-            border-color: var(--primary);
-            color: var(--primary-dark);
-        }
-        
-        .btn-whatsapp {
-            background: linear-gradient(135deg, #25D366, #128C7E);
-            color: var(--white);
-            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
-        }
-        
-        .btn-whatsapp:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 35px rgba(37, 211, 102, 0.4);
-        }
-        
-        .btn-lg {
-            padding: 22px 48px;
-            font-size: 20px;
-        }
-        
-        /* BADGES */
-        .badge {
-            display: inline-block;
-            padding: 8px 20px;
-            border-radius: 50px;
-            font-size: 14px;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-        }
-        
-        .badge-primary {
-            background: rgba(37, 99, 235, 0.1);
-            color: var(--primary);
-        }
-        
-        .badge-success {
-            background: rgba(16, 185, 129, 0.1);
-            color: var(--secondary);
-        }
-        
-        .badge-accent {
-            background: rgba(245, 158, 11, 0.1);
-            color: var(--accent);
+            padding: 0 24px;
         }
         
         /* HEADER */
@@ -209,11 +125,16 @@
             top: 0;
             width: 100%;
             z-index: 1000;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(20px);
             border-bottom: 1px solid rgba(229, 231, 235, 0.8);
-            padding: 20px 0;
+            padding: 16px 0;
             transition: var(--transition);
+        }
+        
+        .header-scrolled {
+            box-shadow: var(--shadow-sm);
+            padding: 12px 0;
         }
         
         .header-container {
@@ -230,15 +151,16 @@
         }
         
         .logo-icon {
-            width: 50px;
-            height: 50px;
-            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            width: 48px;
+            height: 48px;
+            background: var(--gradient-primary);
             border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: var(--white);
             font-size: 24px;
+            box-shadow: 0 8px 20px rgba(37, 99, 235, 0.2);
         }
         
         .logo-text {
@@ -248,17 +170,22 @@
         
         .logo-main {
             font-family: 'Poppins', sans-serif;
-            font-weight: 800;
+            font-weight: 900;
             font-size: 24px;
-            color: var(--dark);
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             line-height: 1;
         }
         
         .logo-sub {
-            font-size: 12px;
-            font-weight: 700;
+            font-size: 11px;
+            font-weight: 800;
             color: var(--primary);
-            letter-spacing: 1px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-top: 4px;
         }
         
         .nav-desktop {
@@ -267,25 +194,119 @@
             gap: 40px;
         }
         
-        .nav-desktop a {
+        .nav-link {
             text-decoration: none;
             color: var(--gray);
             font-weight: 600;
+            font-size: 15px;
             transition: var(--transition);
+            position: relative;
         }
         
-        .nav-desktop a:hover {
+        .nav-link:hover {
             color: var(--primary);
         }
         
-        .nav-desktop a.btn {
-            margin-left: 20px;
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: var(--transition);
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        /* BUTTONS */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px 32px;
+            border-radius: var(--radius);
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-primary {
+            background: var(--gradient-primary);
+            color: var(--white);
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(37, 99, 235, 0.4);
+        }
+        
+        .btn-whatsapp {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: var(--white);
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
+        }
+        
+        .btn-whatsapp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(37, 211, 102, 0.4);
+        }
+        
+        .btn-accent {
+            background: var(--gradient-accent);
+            color: var(--white);
+            box-shadow: 0 10px 25px rgba(245, 158, 11, 0.3);
+        }
+        
+        .btn-accent:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(245, 158, 11, 0.4);
+        }
+        
+        .btn-lg {
+            padding: 20px 40px;
+            font-size: 18px;
+            border-radius: 16px;
+        }
+        
+        /* BADGES */
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        
+        .badge-primary {
+            background: rgba(37, 99, 235, 0.1);
+            color: var(--primary);
+            border: 1px solid rgba(37, 99, 235, 0.2);
+        }
+        
+        .badge-success {
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--secondary);
+            border: 1px solid rgba(16, 185, 129, 0.2);
         }
         
         /* HERO SECTION */
         .hero {
             padding: 180px 0 100px;
-            background: linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 100%);
             position: relative;
             overflow: hidden;
         }
@@ -297,37 +318,57 @@
             width: 50%;
             height: 100%;
             background: url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
-            clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+            border-radius: 0 0 0 100px;
+        }
+        
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.8) 30%, rgba(255,255,255,0) 100%);
         }
         
         .hero-content {
             position: relative;
             z-index: 2;
-            max-width: 600px;
+            max-width: 650px;
         }
         
         .hero-badge {
-            margin-bottom: 20px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 24px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
         }
         
         .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1.5rem;
-        }
-        
-        .hero h1 span {
-            color: var(--primary);
+            margin-bottom: 24px;
+            line-height: 1.1;
         }
         
         .hero .lead {
-            font-size: 1.25rem;
-            margin-bottom: 2rem;
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            max-width: 600px;
         }
         
         .hero-stats {
             display: flex;
-            gap: 30px;
-            margin-top: 40px;
+            gap: 40px;
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid var(--gray-light);
         }
         
         .stat-item {
@@ -336,7 +377,7 @@
         }
         
         .stat-number {
-            font-size: 2rem;
+            font-size: 2.5rem;
             font-weight: 800;
             color: var(--primary);
             line-height: 1;
@@ -345,6 +386,21 @@
         .stat-label {
             font-size: 14px;
             color: var(--gray);
+            margin-top: 8px;
+        }
+        
+        /* COUNTDOWN */
+        .countdown {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(239, 68, 68, 0.1);
+            color: var(--danger);
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: 700;
+            margin: 20px 0;
+            animation: pulse 2s infinite;
         }
         
         /* FEATURES */
@@ -362,19 +418,19 @@
         .section-subtitle {
             font-size: 1.25rem;
             color: var(--gray);
+            margin-top: 16px;
         }
         
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-            margin-bottom: 80px;
+            gap: 30px;
         }
         
         .feature-card {
             background: var(--white);
             border-radius: var(--radius);
-            padding: 40px 30px;
+            padding: 40px;
             box-shadow: var(--shadow);
             border: 1px solid var(--gray-light);
             transition: var(--transition);
@@ -383,78 +439,35 @@
         .feature-card:hover {
             transform: translateY(-10px);
             box-shadow: var(--shadow-lg);
+            border-color: var(--primary-light);
         }
         
         .feature-icon {
             width: 70px;
             height: 70px;
-            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-            border-radius: 16px;
+            background: var(--gradient-primary);
+            border-radius: 18px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: var(--white);
             font-size: 28px;
             margin-bottom: 25px;
+            box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
         }
         
         .feature-icon.secondary {
-            background: linear-gradient(135deg, var(--secondary), #059669);
+            background: var(--gradient-success);
         }
         
         .feature-icon.accent {
-            background: linear-gradient(135deg, var(--accent), #D97706);
-        }
-        
-        /* HOW IT WORKS */
-        .how-it-works {
-            padding: 100px 0;
-            background: var(--light);
-        }
-        
-        .steps-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 60px;
-        }
-        
-        .step {
-            text-align: center;
-            position: relative;
-        }
-        
-        .step-number {
-            width: 60px;
-            height: 60px;
-            background: var(--primary);
-            color: var(--white);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-            font-weight: 800;
-            margin: 0 auto 25px;
-            position: relative;
-            z-index: 2;
-        }
-        
-        .step:not(:last-child):after {
-            content: '';
-            position: absolute;
-            top: 30px;
-            left: 50%;
-            width: 100%;
-            height: 2px;
-            background: var(--gray-light);
-            z-index: 1;
+            background: var(--gradient-accent);
         }
         
         /* PRICING */
         .pricing {
             padding: 100px 0;
-            background: var(--white);
+            background: linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 100%);
         }
         
         .pricing-grid {
@@ -465,7 +478,7 @@
         
         .pricing-card {
             background: var(--white);
-            border-radius: var(--radius);
+            border-radius: var(--radius-lg);
             padding: 50px 40px;
             box-shadow: var(--shadow);
             border: 2px solid var(--gray-light);
@@ -476,7 +489,24 @@
         .pricing-card.featured {
             border-color: var(--primary);
             transform: scale(1.05);
-            box-shadow: var(--shadow-lg);
+            box-shadow: var(--shadow-xl);
+            border-width: 3px;
+        }
+        
+        .pricing-card.featured::before {
+            content: 'MAIS POPULAR';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gradient-primary);
+            color: var(--white);
+            padding: 10px 30px;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 14px;
+            letter-spacing: 1px;
+            box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
         }
         
         .pricing-card:hover {
@@ -485,19 +515,6 @@
         
         .pricing-card.featured:hover {
             transform: scale(1.05) translateY(-10px);
-        }
-        
-        .pricing-badge {
-            position: absolute;
-            top: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: linear-gradient(135deg, var(--accent), #D97706);
-            color: var(--white);
-            padding: 10px 30px;
-            border-radius: 50px;
-            font-weight: 700;
-            font-size: 14px;
         }
         
         .pricing-title {
@@ -512,13 +529,14 @@
         
         .price-amount {
             font-size: 4rem;
-            font-weight: 800;
+            font-weight: 900;
             color: var(--dark);
             line-height: 1;
         }
         
         .price-period {
             color: var(--gray);
+            font-size: 1.1rem;
         }
         
         .pricing-features {
@@ -527,11 +545,12 @@
         }
         
         .pricing-features li {
-            padding: 12px 0;
+            padding: 14px 0;
             border-bottom: 1px solid var(--gray-light);
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
+            font-size: 15px;
         }
         
         .pricing-features li:last-child {
@@ -540,16 +559,35 @@
         
         .pricing-features i {
             color: var(--secondary);
+            font-size: 18px;
         }
         
-        /* CTA */
+        /* CTA SECTION */
         .cta-section {
             padding: 100px 0;
-            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            background: var(--gradient-primary);
             color: var(--white);
             text-align: center;
             position: relative;
             overflow: hidden;
+        }
+        
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            opacity: 0.1;
+            animation: moveBackground 20s linear infinite;
+        }
+        
+        @keyframes moveBackground {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
         }
         
         .cta-section h2 {
@@ -559,14 +597,14 @@
         
         .cta-section .lead {
             color: rgba(255, 255, 255, 0.9);
-            max-width: 800px;
+            max-width: 700px;
             margin: 0 auto 40px;
         }
         
         /* TESTIMONIALS */
         .testimonials {
             padding: 100px 0;
-            background: var(--light);
+            background: var(--white);
         }
         
         .testimonial-grid {
@@ -579,8 +617,9 @@
         .testimonial-card {
             background: var(--white);
             border-radius: var(--radius);
-            padding: 40px 30px;
+            padding: 40px;
             box-shadow: var(--shadow);
+            border: 1px solid var(--gray-light);
         }
         
         .testimonial-text {
@@ -590,13 +629,13 @@
             padding-left: 20px;
         }
         
-        .testimonial-text:before {
+        .testimonial-text::before {
             content: '"';
-            font-size: 60px;
-            color: var(--primary);
+            font-size: 80px;
+            color: var(--primary-light);
             position: absolute;
-            left: -10px;
-            top: -20px;
+            left: -20px;
+            top: -30px;
             opacity: 0.3;
             font-family: Georgia, serif;
         }
@@ -608,22 +647,48 @@
         }
         
         .author-avatar {
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
-            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            background: var(--gradient-primary);
             color: var(--white);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: 700;
-            font-size: 18px;
+            font-weight: 800;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+        
+        /* GUARANTEE */
+        .guarantee {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%);
+        }
+        
+        .guarantee-box {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 50px;
+            max-width: 900px;
+            margin: 0 auto;
+            box-shadow: var(--shadow-lg);
+            border: 3px solid var(--accent);
+        }
+        
+        .guarantee-icon {
+            flex-shrink: 0;
+            font-size: 70px;
+            color: var(--accent);
         }
         
         /* FAQ */
         .faq {
             padding: 100px 0;
-            background: var(--white);
+            background: linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 100%);
         }
         
         .faq-container {
@@ -636,23 +701,28 @@
             border: 1px solid var(--gray-light);
             border-radius: var(--radius);
             overflow: hidden;
+            background: var(--white);
         }
         
         .faq-question {
             padding: 25px 30px;
-            background: var(--light);
-            font-weight: 600;
+            font-weight: 700;
             cursor: pointer;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            transition: var(--transition);
+        }
+        
+        .faq-question:hover {
+            background: rgba(37, 99, 235, 0.05);
         }
         
         .faq-answer {
             padding: 0 30px;
             max-height: 0;
             overflow: hidden;
-            transition: max-height 0.3s ease;
+            transition: max-height 0.3s ease, padding 0.3s ease;
         }
         
         .faq-answer.active {
@@ -691,6 +761,9 @@
             color: rgba(255, 255, 255, 0.7);
             text-decoration: none;
             transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
         
         .footer-column a:hover {
@@ -705,34 +778,13 @@
         }
         
         /* RESPONSIVE */
-        @media (max-width: 992px) {
-            h1 {
-                font-size: 2.8rem;
-            }
-            
-            h2 {
-                font-size: 2.2rem;
-            }
+        @media (max-width: 1024px) {
+            h1 { font-size: 3rem; }
+            h2 { font-size: 2.4rem; }
             
             .hero-bg {
-                display: none;
-            }
-            
-            .hero-content {
-                max-width: 100%;
-                text-align: center;
-            }
-            
-            .hero-stats {
-                justify-content: center;
-            }
-            
-            .pricing-card.featured {
-                transform: none;
-            }
-            
-            .pricing-card.featured:hover {
-                transform: translateY(-10px);
+                width: 40%;
+                clip-path: polygon(40% 0%, 100% 0%, 100% 100%, 0% 100%);
             }
         }
         
@@ -750,38 +802,91 @@
                 cursor: pointer;
             }
             
-            h1 {
-                font-size: 2.2rem;
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 2rem; }
+            
+            .hero {
+                padding: 140px 0 80px;
             }
             
-            h2 {
-                font-size: 1.8rem;
+            .hero-bg {
+                display: none;
             }
             
-            .btn {
-                width: 100%;
-                margin-bottom: 15px;
+            .hero-content {
+                text-align: center;
+                max-width: 100%;
             }
             
             .hero-stats {
                 flex-direction: column;
-                gap: 20px;
+                gap: 30px;
+                text-align: center;
             }
             
             .pricing-grid {
                 grid-template-columns: 1fr;
             }
+            
+            .pricing-card.featured {
+                transform: none;
+            }
+            
+            .pricing-card.featured:hover {
+                transform: translateY(-10px);
+            }
+            
+            .guarantee-box {
+                flex-direction: column;
+                text-align: center;
+                padding: 40px 30px;
+            }
+            
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
         }
+        
+        @media (max-width: 480px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.75rem; }
+            
+            .feature-card,
+            .testimonial-card,
+            .pricing-card {
+                padding: 30px 20px;
+            }
+            
+            .price-amount {
+                font-size: 3rem;
+            }
+        }
+        
+        /* ANIMATIONS */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+        
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
     </style>
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXX"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    
     <!-- HEADER -->
-    <header>
+    <header id="header">
         <div class="container header-container">
             <a href="#" class="logo">
                 <div class="logo-icon">
@@ -794,11 +899,11 @@
             </a>
             
             <nav class="nav-desktop">
-                <a href="#features">Recursos</a>
-                <a href="#how-it-works">Como Funciona</a>
-                <a href="#pricing">Planos</a>
-                <a href="#testimonials">Depoimentos</a>
-                <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20experimentar%20o%20ContratoExpresso%202.0%20por%207%20dias%20grátis" 
+                <a href="#features" class="nav-link">Recursos</a>
+                <a href="#pricing" class="nav-link">Planos</a>
+                <a href="#testimonials" class="nav-link">Depoimentos</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="https://wa.me/SEU_NUMERO?text=Olá!%20Quero%20experimentar%20o%20ContratoExpresso%202.0%20por%207%20dias%20grátis" 
                    target="_blank" class="btn btn-primary">
                     <i class="fab fa-whatsapp"></i> Começar Grátis
                 </a>
@@ -809,27 +914,35 @@
             </button>
         </div>
     </header>
-    
+
     <!-- HERO SECTION -->
     <section class="hero">
         <div class="hero-bg"></div>
         <div class="container">
             <div class="hero-content">
                 <div class="hero-badge">
-                    <span class="badge badge-success">🚀 OFERTA DE LANÇAMENTO</span>
+                    <span class="badge badge-primary">
+                        <i class="fas fa-bolt"></i> OFERTA DE LANÇAMENTO
+                    </span>
                 </div>
                 
-                <h1>Contratos Ilimitados por <span>R$97/mês</span></h1>
+                <h1>Contratos <span class="text-gradient">Ilimitados</span> por <span class="text-gradient">R$97/mês</span></h1>
                 
-                <p class="lead">Sistema completo de contratos automatizados. Crie, revise e assine contratos em minutos, sem precisar de advogado caro.</p>
+                <p class="lead">Sistema completo de contratos automatizados. Crie, revise e assine contratos em minutos via WhatsApp, sem precisar de advogado caro. <strong>Economize até R$5.000/mês.</strong></p>
                 
-                <div class="hero-buttons">
-                    <a href="https://wa.me/5511999999999?text=Olá!%20Quero%20experimentar%20o%20ContratoExpresso%202.0%20por%207%20dias%20grátis" 
-                       target="_blank" class="btn btn-primary btn-lg">
+                <div class="countdown">
+                    <i class="fas fa-clock"></i>
+                    <span id="countdown-timer">07d 00h 00m</span> restantes
+                </div>
+                
+                <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 40px;">
+                    <a href="https://wa.me/SEU_NUMERO?text=Olá!%20Quero%20experimentar%20o%20ContratoExpresso%202.0%20por%207%20dias%20grátis" 
+                       target="_blank" class="btn btn-whatsapp btn-lg">
                         <i class="fab fa-whatsapp"></i> Experimente 7 Dias Grátis
                     </a>
-                    <a href="#pricing" class="btn btn-secondary btn-lg">
-                        <i class="fas fa-chart-bar"></i> Ver Planos Completos
+                    
+                    <a href="#pricing" class="btn btn-lg" style="background: white; color: var(--primary); border: 2px solid var(--gray-light);">
+                        <i class="fas fa-chart-bar"></i> Ver Planos
                     </a>
                 </div>
                 
@@ -840,115 +953,85 @@
                     </div>
                     <div class="stat-item">
                         <div class="stat-number">98%</div>
-                        <div class="stat-label">Satisfação dos Clientes</div>
+                        <div class="stat-label">Satisfação</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number">24/7</div>
-                        <div class="stat-label">Suporte Disponível</div>
+                        <div class="stat-number">R$5M+</div>
+                        <div class="stat-label">Economizados</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <!-- FEATURES -->
     <section class="features" id="features">
         <div class="container">
             <div class="section-header">
-                <h2>Recursos que Transformam seu Negócio</h2>
+                <h2>Recursos que <span class="text-gradient">Transformam</span></h2>
                 <p class="section-subtitle">Tudo o que você precisa para proteger seu negócio em um só lugar</p>
             </div>
             
             <div class="features-grid">
-                <div class="feature-card">
+                <div class="feature-card animate-fade-in-up">
                     <div class="feature-icon">
                         <i class="fas fa-robot"></i>
                     </div>
                     <h3>IA Jurídica Inteligente</h3>
-                    <p>Nossa inteligência artificial sugere cláusulas específicas para seu tipo de negócio, garantindo proteção máxima.</p>
+                    <p>Nossa IA sugere cláusulas específicas para seu tipo de negócio, garantindo proteção máxima e personalização.</p>
                 </div>
                 
-                <div class="feature-card">
+                <div class="feature-card animate-fade-in-up delay-100">
                     <div class="feature-icon secondary">
                         <i class="fas fa-bolt"></i>
                     </div>
                     <h3>Geração em 2 Minutos</h3>
-                    <p>Responda perguntas simples e receba seu contrato profissional pronto em menos de 2 minutos.</p>
+                    <p>Responda perguntas simples via WhatsApp e receba seu contrato profissional pronto em menos de 2 minutos.</p>
                 </div>
                 
-                <div class="feature-card">
+                <div class="feature-card animate-fade-in-up delay-200">
                     <div class="feature-icon accent">
                         <i class="fas fa-shield-alt"></i>
                     </div>
                     <h3>Revisão por Advogados</h3>
-                    <p>Todos os modelos são criados e revisados por nossa equipe de advogados especializados.</p>
+                    <p>Todos os modelos são criados e revisados por nossa equipe de advogados especializados em direito empresarial.</p>
                 </div>
             </div>
             
-            <div class="features-grid">
-                <div class="feature-card">
+            <div class="features-grid" style="margin-top: 30px;">
+                <div class="feature-card animate-fade-in-up delay-300">
                     <div class="feature-icon">
                         <i class="fas fa-signature"></i>
                     </div>
                     <h3>Assinatura Digital</h3>
-                    <p>Assine contratos digitalmente com validade jurídica completa, sem sair do sistema.</p>
+                    <p>Assine contratos digitalmente com validade jurídica completa, direto pelo WhatsApp ou plataforma web.</p>
                 </div>
                 
-                <div class="feature-card">
+                <div class="feature-card animate-fade-in-up delay-100">
                     <div class="feature-icon secondary">
                         <i class="fas fa-sync-alt"></i>
                     </div>
                     <h3>Atualização Automática</h3>
-                    <p>Seus contratos são atualizados automaticamente conforme mudanças na legislação.</p>
+                    <p>Seus contratos são atualizados automaticamente conforme mudanças na legislação. Sempre atualizado!</p>
                 </div>
                 
-                <div class="feature-card">
+                <div class="feature-card animate-fade-in-up delay-200">
                     <div class="feature-icon accent">
-                        <i class="fas fa-database"></i>
+                        <i class="fas fa-headset"></i>
                     </div>
-                    <h3>Armazenamento Ilimitado</h3>
-                    <p>Armazene todos seus contratos com segurança na nuvem, acesse de qualquer lugar.</p>
+                    <h3>Suporte 24/7</h3>
+                    <p>Nossa equipe está disponível 24 horas por dia, 7 dias por semana via WhatsApp para tirar suas dúvidas.</p>
                 </div>
             </div>
         </div>
     </section>
-    
-    <!-- HOW IT WORKS -->
-    <section class="how-it-works" id="how-it-works">
-        <div class="container">
-            <div class="section-header">
-                <h2>Como Funciona em 3 Passos</h2>
-                <p class="section-subtitle">Simples, rápido e seguro</p>
-            </div>
-            
-            <div class="steps-container">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Escolha o Tipo</h3>
-                    <p>Selecione entre mais de 50 modelos de contratos específicos para seu negócio.</p>
-                </div>
-                
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Personalize</h3>
-                    <p>Responda perguntas simples e nossa IA ajusta o contrato para suas necessidades.</p>
-                </div>
-                
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Assine e Use</h3>
-                    <p>Assine digitalmente e receba o PDF pronto para usar em menos de 2 minutos.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
+
     <!-- PRICING -->
     <section class="pricing" id="pricing">
         <div class="container">
             <div class="section-header">
-                <h2>Planos que Cabem no seu Bolso</h2>
-                <p class="section-subtitle">Escolha o plano perfeito para seu negócio</p>
+                <h2>Planos que <span class="text-gradient">Cabem no Seu Bolso</span></h2>
+                <p class="section-subtitle">Escolha o plano perfeito para o tamanho do seu negócio</p>
             </div>
             
             <div class="pricing-grid">
@@ -968,15 +1051,14 @@
                         <li><i class="fas fa-check"></i> Suporte por email</li>
                     </ul>
                     
-                    <a href="https://wa.me/5511999999999?text=Quero%20assinar%20o%20plano%20Freelancer%20(R$67/mês)" 
-                       target="_blank" class="btn btn-secondary" style="width: 100%;">
+                    <a href="https://wa.me/SEU_NUMERO?text=Quero%20o%20plano%20Freelancer%20(R$67/mês)" 
+                       target="_blank" class="btn" style="width: 100%; background: white; color: var(--primary); border: 2px solid var(--gray-light);">
                         Escolher Plano
                     </a>
                 </div>
                 
                 <!-- Plano Recomendado -->
                 <div class="pricing-card featured">
-                    <div class="pricing-badge">MAIS POPULAR</div>
                     <h3 class="pricing-title">Empresarial</h3>
                     <div class="pricing-price">
                         <div class="price-amount">R$97</div>
@@ -985,17 +1067,21 @@
                     
                     <ul class="pricing-features">
                         <li><i class="fas fa-check"></i> <strong>Contratos ilimitados</strong></li>
-                        <li><i class="fas fa-check"></i> Todos os modelos</li>
+                        <li><i class="fas fa-check"></i> Todos os 50+ modelos</li>
                         <li><i class="fas fa-check"></i> IA Jurídica Inteligente</li>
                         <li><i class="fas fa-check"></i> Revisão de 1 contrato/mês</li>
                         <li><i class="fas fa-check"></i> Armazenamento vitalício</li>
                         <li><i class="fas fa-check"></i> Suporte WhatsApp 24/7</li>
                     </ul>
                     
-                    <a href="https://wa.me/5511999999999?text=Quero%20assinar%20o%20plano%20Empresarial%20(R$97/mês)%20com%207%20dias%20grátis" 
+                    <a href="https://wa.me/SEU_NUMERO?text=Quero%20o%20plano%20Empresarial%20(R$97/mês)%20com%207%20dias%20grátis" 
                        target="_blank" class="btn btn-primary btn-lg" style="width: 100%;">
                         <i class="fab fa-whatsapp"></i> Começar 7 Dias Grátis
                     </a>
+                    
+                    <p style="text-align: center; margin-top: 15px; font-size: 14px; color: var(--gray);">
+                        <i class="fas fa-star"></i> Plano mais escolhido por empresas
+                    </p>
                 </div>
                 
                 <!-- Plano Premium -->
@@ -1015,125 +1101,156 @@
                         <li><i class="fas fa-check"></i> Suporte prioritário</li>
                     </ul>
                     
-                    <a href="https://wa.me/5511999999999?text=Quero%20assinar%20o%20plano%20Corporate%20(R$197/mês)" 
-                       target="_blank" class="btn btn-secondary" style="width: 100%;">
+                    <a href="https://wa.me/SEU_NUMERO?text=Quero%20o%20plano%20Corporate%20(R$197/mês)" 
+                       target="_blank" class="btn" style="width: 100%; background: white; color: var(--primary); border: 2px solid var(--gray-light);">
                         Escolher Plano
                     </a>
                 </div>
             </div>
             
             <div style="text-align: center; margin-top: 50px;">
-                <p style="color: var(--gray);">
-                    <i class="fas fa-lock"></i> Pagamento seguro via PIX ou cartão • Cancelamento a qualquer momento
+                <p style="color: var(--gray); font-size: 15px;">
+                    <i class="fas fa-lock"></i> Pagamento 100% seguro via PIX ou cartão • 
+                    <i class="fas fa-sync-alt"></i> Cancelamento a qualquer momento • 
+                    <i class="fas fa-shield-alt"></i> Garantia de 30 dias
                 </p>
             </div>
         </div>
     </section>
-    
-    <!-- CTA SECTION -->
-    <section class="cta-section">
+
+    <!-- GUARANTEE -->
+    <section class="guarantee">
         <div class="container">
-            <h2>Proteja seu Negócio Hoje Mesmo</h2>
-            <p class="lead">Experimente por 7 dias grátis. Sem compromisso, sem cartão de crédito necessário.</p>
-            
-            <a href="https://wa.me/5511999999999?text=Olá!%20Quero%20experimentar%20o%20ContratoExpresso%202.0%20por%207%20dias%20grátis.%20Como%20faço?" 
-               target="_blank" class="btn btn-whatsapp btn-lg">
-                <i class="fab fa-whatsapp"></i> Falar no WhatsApp Agora
-            </a>
-            
-            <p style="margin-top: 30px; font-size: 14px; opacity: 0.8;">
-                <i class="fas fa-check-circle"></i> 7 dias grátis • Suporte 24/7 • Garantia de satisfação
-            </p>
+            <div class="guarantee-box">
+                <div class="guarantee-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="guarantee-content">
+                    <h3>Garantia Incondicional de 30 Dias</h3>
+                    <p>Experimente o ContratoExpresso 2.0 por 30 dias. Se por qualquer motivo você não estiver satisfeito, devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia. Você não tem nada a perder.</p>
+                </div>
+            </div>
         </div>
     </section>
-    
+
     <!-- TESTIMONIALS -->
     <section class="testimonials" id="testimonials">
         <div class="container">
             <div class="section-header">
-                <h2>O que Nossos Clientes Dizem</h2>
+                <h2>O que Nossos <span class="text-gradient">Clientes Dizem</span></h2>
                 <p class="section-subtitle">Mais de 500 empresas já protegem seus negócios conosco</p>
             </div>
             
             <div class="testimonial-grid">
                 <div class="testimonial-card">
                     <div class="testimonial-text">
-                        "Economizei R$5.000 em honorários advocatícios no primeiro mês. O sistema é intuitivo e os contratos são profissionais."
+                        "Economizei R$5.000 em honorários advocatícios no primeiro mês. O sistema é tão intuitivo que consegui criar 3 contratos importantes na primeira semana. Recomendo para todo empresário!"
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">CR</div>
                         <div class="author-info">
                             <h4>Carlos Rodrigues</h4>
-                            <p>CEO, E-commerce de Roupas</p>
+                            <p>CEO, E-commerce de R$2M/ano</p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="testimonial-card">
                     <div class="testimonial-text">
-                        "Como advogado, recomendo para meus clientes de pequeno porte. É a solução perfeita para quem não pode pagar um departamento jurídico."
+                        "Como advogado, eu mesmo uso para meus clientes de pequeno porte. É a solução perfeita para quem não pode pagar um departamento jurídico. A qualidade dos contratos é impressionante."
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">AS</div>
                         <div class="author-info">
                             <h4>Dra. Ana Silva</h4>
-                            <p>Advogada Empresarial</p>
+                            <p>Advogada com 15 anos de experiência</p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="testimonial-card">
                     <div class="testimonial-text">
-                        "Conseguimos fechar 3 contratos importantes em uma semana usando o sistema. A assinatura digital facilitou tudo."
+                        "Conseguimos fechar 3 contratos de R$50.000 cada em uma semana usando o sistema. A assinatura digital facilitou tudo e nossos clientes adoraram a praticidade. ROI impressionante!"
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">MF</div>
                         <div class="author-info">
                             <h4>Marcos Ferreira</h4>
-                            <p>Diretor, Agência Digital</p>
+                            <p>Diretor, Agência Digital com 20 funcionários</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Proteja Seu Negócio Hoje Mesmo</h2>
+            <p class="lead">Experimente por 7 dias grátis. Sem compromisso, sem cartão de crédito. Apenas resultados.</p>
+            
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin: 40px 0;">
+                <a href="https://wa.me/SEU_NUMERO?text=Quero%20experimentar%20o%20ContratoExpresso%202.0%20por%207%20dias%20grátis" 
+                   target="_blank" class="btn btn-whatsapp btn-lg">
+                    <i class="fab fa-whatsapp"></i> Falar no WhatsApp Agora
+                </a>
+                
+                <a href="tel:SEU_TELEFONE" class="btn btn-accent btn-lg">
+                    <i class="fas fa-phone"></i> Ligar Agora
+                </a>
+            </div>
+            
+            <div style="background: rgba(255,255,255,0.1); padding: 25px; border-radius: var(--radius); max-width: 600px; margin: 0 auto;">
+                <h4 style="color: white; margin-bottom: 15px; text-align: center;">
+                    <i class="fas fa-gift"></i> Bônus Especial de Lançamento
+                </h4>
+                <p style="color: rgba(255,255,255,0.9); text-align: center;">
+                    <strong>Primeiros 100 clientes ganham:</strong><br>
+                    • Checklist "Proteção Jurídica Completa" (R$97 de valor)<br>
+                    • Acesso vitalício ao clube de atualizações<br>
+                    • Suporte prioritário por 1 ano
+                </p>
+            </div>
+        </div>
+    </section>
+
     <!-- FAQ -->
     <section class="faq" id="faq">
         <div class="container">
             <div class="section-header">
-                <h2>Perguntas Frequentes</h2>
+                <h2>Perguntas <span class="text-gradient">Frequentes</span></h2>
                 <p class="section-subtitle">Tire suas dúvidas sobre o ContratoExpresso 2.0</p>
             </div>
             
             <div class="faq-container">
                 <div class="faq-item">
                     <div class="faq-question">
-                        Como funciona o teste grátis?
+                        Como funciona o teste grátis de 7 dias?
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Você tem acesso completo a todos os recursos por 7 dias sem pagar nada. Não pedimos cartão de crédito. Após 7 dias, se gostar, escolhe um plano. Se não, cancela sem custo.</p>
+                        <p>Você tem acesso completo a todos os recursos do plano Empresarial por 7 dias sem pagar nada. Não pedimos cartão de crédito. Basta clicar no botão do WhatsApp e nossa equipe te dará acesso imediato.</p>
                     </div>
                 </div>
                 
                 <div class="faq-item">
                     <div class="faq-question">
-                        Os contratos têm validade jurídica?
+                        Os contratos têm validade jurídica real?
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Sim! Todos os modelos são criados por nossa equipe de advogados e atualizados conforme a legislação. A assinatura digital tem validade jurídica completa segundo a MP 2.200-2/2001.</p>
+                        <p>Sim! Todos os modelos são criados por nossa equipe de advogados especializados e atualizados conforme a legislação. A assinatura digital tem validade jurídica completa conforme a Lei 14.063/2020.</p>
                     </div>
                 </div>
                 
                 <div class="faq-item">
                     <div class="faq-question">
-                        Posso cancelar a qualquer momento?
+                        Posso cancelar quando quiser?
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Sim! Não temos fidelidade. Você pode cancelar quando quiser pelo painel do cliente. Se cancelar nos primeiros 30 dias, devolvemos 100% do seu dinheiro.</p>
+                        <p>Sim! Não temos fidelidade. Você pode cancelar quando quiser pelo WhatsApp ou painel do cliente. Se cancelar nos primeiros 30 dias, devolvemos 100% do seu dinheiro sem perguntas.</p>
                     </div>
                 </div>
                 
@@ -1143,18 +1260,7 @@
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Temos mais de 50 modelos específicos: contratos de prestação de serviços, NDA, sociedade, trabalho remoto, fornecedores, e-com
-                                                  <p>Temos mais de 50 modelos específicos: contratos de prestação de serviços, NDA, sociedade, trabalho remoto, fornecedores, e-commerce e muito mais. Todo mês adicionamos novos modelos.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        Como funciona a revisão por advogados?
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>No plano Empresarial você tem direito a 1 revisão por mês. Envie seu contrato pelo sistema e em até 24h um advogado especializado fará a análise e dará recomendações específicas.</p>
+                        <p>Temos mais de 50 modelos específicos para diferentes negócios: contratos de prestação de serviços, NDA (confidencialidade), sociedade, trabalho remoto, fornecedores, e-commerce, franquia, e muito mais. Todo mês adicionamos novos modelos.</p>
                     </div>
                 </div>
             </div>
@@ -1162,31 +1268,26 @@
     </section>
 
     <!-- FINAL CTA -->
-    <section class="cta-section" style="background: linear-gradient(135deg, #10B981, #059669);">
+    <section style="padding: 80px 0; background: var(--white); text-align: center;">
         <div class="container">
-            <h2>Comece Agora e Proteja Seu Negócio</h2>
-            <p class="lead">Não arrisque seu negócio com contratos amadores. Tenha segurança jurídica profissional por menos de R$3,20 por dia.</p>
+            <h2 style="margin-bottom: 20px;">Pronto para <span class="text-gradient">Transformar seu Negócio</span>?</h2>
+            <p class="lead" style="max-width: 700px; margin: 0 auto 40px;">
+                Não deixe para amanhã a proteção que seu negócio precisa hoje. Comece agora e garanta o preço especial de lançamento.
+            </p>
             
-            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 40px;">
-                <a href="https://wa.me/5511999999999?text=Quero%20o%20plano%20Empresarial%20(R$97/mês)%20com%207%20dias%20grátis" 
-                   target="_blank" class="btn btn-whatsapp btn-lg">
-                    <i class="fab fa-whatsapp"></i> Começar Grátis
-                </a>
-                
-                <a href="tel:+5511999999999" class="btn btn-secondary btn-lg">
-                    <i class="fas fa-phone"></i> Falar por Telefone
-                </a>
+            <div class="countdown" style="margin: 0 auto 40px;">
+                <i class="fas fa-clock"></i>
+                <span id="final-countdown">07d 00h 00m</span> para garantir o preço especial
             </div>
             
-            <div style="margin-top: 40px; background: rgba(255,255,255,0.1); padding: 25px; border-radius: var(--radius); max-width: 600px; margin-left: auto; margin-right: auto;">
-                <h4 style="color: white; margin-bottom: 15px;">🎁 Bônus Especial de Lançamento</h4>
-                <p style="color: rgba(255,255,255,0.9); margin-bottom: 0;">
-                    <i class="fas fa-gift"></i> <strong>Primeiros 100 clientes ganham:</strong><br>
-                    1. Checklist "Proteção Jurídica Completa" (R$97)<br>
-                    2. Treinamento "Contratos que Convertem" (R$197)<br>
-                    3. Acesso vitalício ao clube de atualizações
-                </p>
-            </div>
+            <a href="https://wa.me/SEU_NUMERO?text=Quero%20garantir%20o%20preço%20especial%20de%20lançamento%20do%20ContratoExpresso%202.0%20antes%20que%20acabe!" 
+               target="_blank" class="btn btn-primary btn-lg">
+                <i class="fab fa-whatsapp"></i> Garantir Preço Especial Agora
+            </a>
+            
+            <p style="margin-top: 30px; color: var(--gray); font-size: 14px;">
+                <i class="fas fa-lock"></i> 100% seguro • <i class="fas fa-shield-alt"></i> 30 dias de garantia • <i class="fas fa-check-circle"></i> Suporte 24/7
+            </p>
         </div>
     </section>
 
@@ -1207,12 +1308,6 @@
                     <p style="color: rgba(255,255,255,0.7); max-width: 300px;">
                         Sistema completo de contratos automatizados para empresas que buscam segurança jurídica sem custos altos.
                     </p>
-                    <div style="margin-top: 20px;">
-                        <a href="#" style="margin-right: 15px; font-size: 20px;"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#" style="margin-right: 15px; font-size: 20px;"><i class="fab fa-instagram"></i></a>
-                        <a href="#" style="margin-right: 15px; font-size: 20px;"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" style="font-size: 20px;"><i class="fab fa-facebook"></i></a>
-                    </div>
                 </div>
                 
                 <div class="footer-column">
@@ -1221,7 +1316,6 @@
                         <li><a href="#pricing"><i class="fas fa-chevron-right"></i> Freelancer (R$67/mês)</a></li>
                         <li><a href="#pricing"><i class="fas fa-chevron-right"></i> Empresarial (R$97/mês)</a></li>
                         <li><a href="#pricing"><i class="fas fa-chevron-right"></i> Corporate (R$197/mês)</a></li>
-                        <li><a href="#pricing"><i class="fas fa-chevron-right"></i> Comparar Planos</a></li>
                     </ul>
                 </div>
                 
@@ -1231,7 +1325,7 @@
                         <li><a href="#features"><i class="fas fa-chevron-right"></i> IA Jurídica</a></li>
                         <li><a href="#features"><i class="fas fa-chevron-right"></i> Assinatura Digital</a></li>
                         <li><a href="#features"><i class="fas fa-chevron-right"></i> Revisão por Advogados</a></li>
-                        <li><a href="#features"><i class="fas fa-chevron-right"></i> Modelos de Contrato</a></li>
+                        <li><a href="#features"><i class="fas fa-chevron-right"></i> Suporte 24/7</a></li>
                     </ul>
                 </div>
                 
@@ -1239,9 +1333,8 @@
                     <h3>Contato</h3>
                     <ul>
                         <li><a href="mailto:contato@contratoexpresso.com.br"><i class="fas fa-envelope"></i> contato@contratoexpresso.com.br</a></li>
-                        <li><a href="tel:+5511999999999"><i class="fas fa-phone"></i> (11) 99999-9999</a></li>
-                        <li><a href="https://wa.me/5511999999999" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
-                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> São Paulo, SP</a></li>
+                        <li><a href="tel:SEU_TELEFONE"><i class="fas fa-phone"></i> (11) 99999-9999</a></li>
+                        <li><a href="https://wa.me/SEU_NUMERO" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
                     </ul>
                 </div>
             </div>
@@ -1249,7 +1342,7 @@
             <div class="copyright">
                 <p>© 2024 ContratoExpresso 2.0. CNPJ: 00.000.000/0001-00</p>
                 <p style="margin-top: 10px; font-size: 14px; color: rgba(255,255,255,0.5);">
-                    Este serviço não substitui a consulta com um advogado para casos complexos. Todos os contratos são modelos genéricos que devem ser adaptados à realidade de cada negócio.
+                    Este serviço não substitui a consulta com um advogado para casos complexos. Preços válidos apenas durante o período de lançamento.
                 </p>
             </div>
         </div>
@@ -1257,6 +1350,48 @@
 
     <!-- SCRIPTS -->
     <script>
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('header-scrolled');
+            } else {
+                header.classList.remove('header-scrolled');
+            }
+        });
+
+        // Countdown Timer
+        function updateCountdown() {
+            const endDate = new Date();
+            endDate.setDate(endDate.getDate() + 7); // 7 dias a partir de hoje
+            
+            const now = new Date();
+            const timeLeft = endDate - now;
+            
+            if (timeLeft > 0) {
+                const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                
+                // Formatar com zero à esquerda
+                const format = (num) => num.toString().padStart(2, '0');
+                
+                const countdownText = `${format(days)}d ${format(hours)}h ${format(minutes)}m`;
+                
+                // Atualizar todos os contadores
+                document.querySelectorAll('#countdown-timer, #final-countdown').forEach(el => {
+                    el.textContent = countdownText;
+                });
+            } else {
+                document.querySelectorAll('#countdown-timer, #final-countdown').forEach(el => {
+                    el.textContent = '00d 00h 00m';
+                });
+            }
+        }
+        
+        updateCountdown();
+        setInterval(updateCountdown, 60000);
+
         // FAQ Accordion
         document.querySelectorAll('.faq-question').forEach(question => {
             question.addEventListener('click', () => {
@@ -1286,74 +1421,29 @@
         // Mobile Menu
         document.querySelector('.mobile-menu-btn').addEventListener('click', () => {
             const nav = document.querySelector('.nav-desktop');
+            const icon = document.querySelector('.mobile-menu-btn i');
+            
             if (nav.style.display === 'flex') {
                 nav.style.display = 'none';
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
             } else {
                 nav.style.display = 'flex';
                 nav.style.flexDirection = 'column';
                 nav.style.position = 'absolute';
                 nav.style.top = '100%';
                 nav.style.left = '0';
-                nav.style.width = '100%';
+                nav.style.right = '0';
                 nav.style.background = 'white';
-                nav.style.padding = '20px';
-                nav.style.boxShadow = '0 10px 30px rgba(0,0,0,0.1)';
+                nav.style.padding = '30px';
+                nav.style.boxShadow = '0 20px 40px rgba(0,0,0,0.1)';
+                nav.style.zIndex = '1000';
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
             }
         });
 
-        // Contador para oferta
-        function updateCountdown() {
-            const endDate = new Date();
-            endDate.setDate(endDate.getDate() + 7); // Oferta de 7 dias
-            
-            const now = new Date();
-            const timeLeft = endDate - now;
-            
-            if (timeLeft > 0) {
-                const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-                
-                // Atualizar elementos com contador se existirem
-                const countdownElements = document.querySelectorAll('.countdown');
-                countdownElements.forEach(el => {
-                    el.innerHTML = `${days}d ${hours}h ${minutes}m`;
-                });
-            }
-        }
-        
-        // Atualizar contador a cada minuto
-        updateCountdown();
-        setInterval(updateCountdown, 60000);
-
-        // Tracking de clicks no WhatsApp
-        document.querySelectorAll('a[href*="whatsapp"]').forEach(link => {
-            link.addEventListener('click', function() {
-                if (typeof fbq !== 'undefined') {
-                    fbq('track', 'Lead');
-                }
-                if (typeof gtag !== 'undefined') {
-                    gtag('event', 'whatsapp_click', {
-                        'event_category': 'conversion',
-                        'event_label': 'whatsapp_lead'
-                    });
-                }
-            });
-        });
-
-        // Header scroll effect
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.style.boxShadow = '0 5px 20px rgba(0,0,0,0.1)';
-                header.style.padding = '15px 0';
-            } else {
-                header.style.boxShadow = 'none';
-                header.style.padding = '20px 0';
-            }
-        });
-
-        // Smooth scroll para âncoras
+        // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -1362,49 +1452,50 @@
                 
                 const targetElement = document.querySelector(targetId);
                 if (targetElement) {
-                    const headerHeight = document.querySelector('header').offsetHeight;
+                    const headerHeight = document.getElementById('header').offsetHeight;
                     window.scrollTo({
                         top: targetElement.offsetTop - headerHeight - 20,
                         behavior: 'smooth'
                     });
+                    
+                    // Close mobile menu if open
+                    const nav = document.querySelector('.nav-desktop');
+                    if (window.innerWidth <= 768 && nav.style.display === 'flex') {
+                        nav.style.display = 'none';
+                        document.querySelector('.mobile-menu-btn i').classList.remove('fa-times');
+                        document.querySelector('.mobile-menu-btn i').classList.add('fa-bars');
+                    }
                 }
             });
         });
 
-        // Form submission simulation
-        document.addEventListener('DOMContentLoaded', function() {
-            // Adicionar contador em elementos específicos
-            const timerElement = document.createElement('div');
-            timerElement.className = 'countdown';
-            timerElement.style.cssText = 'color: var(--accent); font-weight: 700; margin-top: 10px;';
-            
-            // Adicionar em locais estratégicos
-            const ctaButtons = document.querySelectorAll('.btn-primary, .btn-whatsapp');
-            ctaButtons.forEach(btn => {
-                const parent = btn.parentElement;
-                if (parent && !parent.querySelector('.countdown')) {
-                    const timerClone = timerElement.cloneNode(true);
-                    parent.appendChild(timerClone);
-                }
+        // WhatsApp click tracking
+        document.querySelectorAll('a[href*="whatsapp"]').forEach(link => {
+            link.addEventListener('click', function() {
+                // Track conversion (simplified)
+                console.log('WhatsApp click tracked');
+                // Aqui você adicionaria seu pixel do Facebook/Google
             });
-            
-            updateCountdown();
         });
 
-        // Número de vendas dinâmico
-        function updateSalesCount() {
-            const baseSales = 2500;
-            const salesElement = document.querySelector('.stat-number');
-            if (salesElement && salesElement.textContent.includes('2.500+')) {
-                // Simular crescimento orgânico
-                const hours = new Date().getHours();
-                const growth = Math.floor(hours * 1.5); // Cresce 1.5 por hora
-                const totalSales = baseSales + growth;
-                salesElement.textContent = totalSales.toLocaleString('pt-BR') + '+';
-            }
-        }
-        
-        updateSalesCount();
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in-up');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all feature cards
+        document.querySelectorAll('.feature-card').forEach(card => {
+            observer.observe(card);
+        });
     </script>
 </body>
 </html>
